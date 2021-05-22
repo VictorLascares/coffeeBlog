@@ -27,7 +27,7 @@ h1 { font-size: 4.8rem; }
 h2 { font-size: 4rem; }
 h3 { font-size: 3.2rem; }
 h4 { font-size: 2.8rem; }
-img { max-width: 100%;}
+img { width: 100%;}
 /* Uitilities */
 .container {
     /* max-width: 120rem;
@@ -113,6 +113,9 @@ img { max-width: 100%;}
     border-bottom: 1px solid var(--grey);
     margin-bottom: 2rem;
 }
+.post__content {
+    text-align: justify;
+}
 .post:last-of-type {
     border: none;
     margin-bottom: 0;
@@ -179,4 +182,18 @@ img { max-width: 100%;}
 .footer {
     background-color: var(--dark);
     padding-bottom: 3rem;
+}
+/* About us */
+.about-us {
+    margin-bottom: 3rem;
+}
+@media (min-width: 1200px) {
+    .about-us__content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+.about-us__text {
+    text-align: justify;
 }
