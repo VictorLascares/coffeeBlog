@@ -40,8 +40,9 @@ img { width: 100%;}
 .text-center { text-align: center; }
 .text-justify { text-align: justify; }
 /* Header */
+.webp .header { background-image: url(../img/banner.webp); }
+.no-webp .header { background-image: url(../img/banner.jpg); }
 .header {
-    background-image: url(../img/banner.jpg);
     height: 60rem;
     background-repeat: no-repeat;
     background-position: center;
@@ -206,6 +207,7 @@ img { width: 100%;}
     border: 1px solid var(--grey);
     border-radius: .3rem;
 }
+.form__input:focus { outline: none; }
 .form__input:hover {
     box-shadow: 0 1px 6px rgba(32,33,36,.28);
 }
